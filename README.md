@@ -86,25 +86,25 @@ frontend/
 
 ---
 
-API Endpoints
-Auth Routes
-POST /api/v1/auth/register – Register user
-POST /api/v1/auth/login – Login user
-Task Routes (Protected)
-POST /api/v1/tasks – Create task
-GET /api/v1/tasks – Get all tasks
-GET /api/v1/tasks/:id – Get task by ID
-PUT /api/v1/tasks/:id – Update task
-DELETE /api/v1/tasks/:id – Delete task (Admin/Owner protected)
+### API Endpoints
+-Auth Routes
+-POST /api/v1/auth/register – Register user
+-POST /api/v1/auth/login – Login user
+-Task Routes (Protected)
+-POST /api/v1/tasks – Create task
+-GET /api/v1/tasks – Get all tasks
+-GET /api/v1/tasks/:id – Get task by ID
+-PUT /api/v1/tasks/:id – Update task
+-DELETE /api/v1/tasks/:id – Delete task (Admin/Owner protected)
 
-Authentication Flow
-1.User registers with name, email, and password
-2.Password is hashed before storage
-3.User logs in and receives a JWT token
-4.Token is stored in localStorage on frontend
-5.Token is sent in Authorization header for protected routes
+### Authentication Flow
+-User registers with name, email, and password
+-Password is hashed before storage
+-User logs in and receives a JWT token
+-Token is stored in localStorage on frontend
+-Token is sent in Authorization header for protected routes
 
-Security Implementations
+### Security Implementations
 -Password hashing using bcrypt
 -JWT authentication
 -Role-based authorization
@@ -113,7 +113,7 @@ Security Implementations
 -Helmet for HTTP header security
 -Rate limiting to prevent abuse
 
-Scalability Considerations
+### Scalability Considerations
 -Modular folder structure (controllers, services, routes)
 -API versioning implemented
 -Middleware-based architecture
