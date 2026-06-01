@@ -62,6 +62,7 @@ The system implements secure user authentication using JWT, role-based access co
 
 ## Project Structure
 
+### Backend
 backend/
 │── src/
 │ ├── controllers/
@@ -74,6 +75,7 @@ backend/
 │ ├── app.js
 │ └── server.js
 
+### Frontend
 frontend/
 │── src/
 │ ├── pages/
@@ -81,6 +83,8 @@ frontend/
 │ ├── services/
 │ ├── App.jsx
 │ └── main.jsx
+
+---
 
 API Endpoints
 Auth Routes
